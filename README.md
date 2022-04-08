@@ -364,4 +364,47 @@ if ($var -isnot [bool]) {
 
 ![image](https://user-images.githubusercontent.com/91564342/162515960-e82144bd-1bdc-4779-871a-38d51bcb308e.png)
 
+## 3.4:
+<b>
+Uso de switch
+</b>
+
+##EJEMPLOS:
+
+### 4.1
+<b>Primeramente, se le asigna un valor a la variable $number y con el switch, si el valor de la variable $number es 1,ejecutaremos la sentencia de la opción 1, si es 2, ejecutaremos la sentencia 2 y si no es ninguno de los 2, se ejecutatrá el default
+</b>
+
+<code>
+[int]$number = 2
+switch ($number) {
+    1 { "The number is one" }
+    2 { "The number is two" }
+    default { "I dont know what the number is" }
+}
+</code>
+
+![image](https://user-images.githubusercontent.com/91564342/162516557-7b89565d-b987-49df-a457-c11212b1ce32.png)
+
+### 4.2:
+<b>Primeramente, se le asigna un valor a la variable $favouriteColour y con el switch, si el valor de la variable $favouriteColour es "Red",ejecutaremos la sentencia de la opción 1, si es "Blue", ejecutaremos la sentencia 2 y si no es ninguno de los 2, se ejecutatrá el default
+</b>
+
+<code>
+[string]$favouriteColour = "Blue"
+switch ($favouriteColour) {
+    "Red" {
+        "Your favourite colour is Red"
+        "I like red too."
+    }
+    "Blue" {
+        "Your favourite colour is Blue"
+        "I like Blue too."
+    }
+    default { "I dont recognise that colour" }
+}
+</code>
+
+![image](https://user-images.githubusercontent.com/91564342/162516770-b595663d-c6f1-43f9-a661-c7922bdd518e.png)
+
 
